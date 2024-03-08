@@ -7,8 +7,8 @@ const userList = document.getElementById("users");
         
         data.results.forEach(users => { 
             const innerUsers = document.createElement("div");
-            innerUsers.classList.add("card");
-            innerUsers.style.width = "16rem";
+            innerUsers.classList.add("card", "px-0","m-1", "text-nowrap");
+            innerUsers.style.width = "18rem";
             innerUsers.innerHTML = `
                 <img src="${users.picture.large}" class="card-img-top" alt="User Image">
                 <div class="card-body text-center">
